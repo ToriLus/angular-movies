@@ -1,0 +1,38 @@
+<div class="login-container">
+  <div class="logo">rotten cabbages</div>
+  <img
+    class="film"
+    src="assets/images/film.png"
+    alt="image of popcorn, tv and movie associated items"
+  />
+  <div class="desc">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, esse
+    modi dignissimos similique quasi corrupti non id voluptate quia aperiam
+    minus harum dolore cupiditate sunt aliquid! Ratione voluptatibus quod
+    temporibus?
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="pword">Password</label>
+      <input
+        type="password"
+        name="pword"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="btn-container">
+      <div class="error">{{ errorMsg }}</div>
+      <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>
